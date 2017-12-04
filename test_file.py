@@ -70,7 +70,7 @@ class Draft():
 	# 	pass
 	# 	#returns true if team is full, else returns false
 
-#copy final draft rankings to each class instance. Also change rankings based on changes other class instances make
+#copy the final draft rankings to each class instance. Also change rankings based on changes other class instances make
 #aka: copy new class instance every time it is called
 class AutoDraft():
 
