@@ -1,0 +1,19 @@
+#Plan
+'''
+1. Figure out point system
+this:
+2. Use Pandas to calculate points for each player from CSV
+3. Build function that updates scores when player drafted
+or:
+2. Calculate average score for each position and distance from score per player. 
+
+4. See how you incorporate average draft position
+
+'''
+
+If I have a player at 30 and ADP has him at 50, I assign a list_rank value of 40 (30+50)/2
+If I have a player at 50, and ADP has him at 40, I assign a list_rank value of 50 (my value)
+I then sort all the list_rank numbers and renumber.
+
+
+USE YAHOO’s API
