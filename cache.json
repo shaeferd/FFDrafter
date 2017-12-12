@@ -1,0 +1,1762 @@
+[
+    {
+        "Index": "",
+        "Rank": "Rank",
+        "Player": "Player",
+        "Position": "Position",
+        "My Rank": "My Rank",
+        "Avg Rank": "Avg Rank"
+    },
+    {
+        "Index": "0",
+        "Rank": "0",
+        "Player": "David Johnson",
+        "Position": "rb",
+        "My Rank": "0",
+        "Avg Rank": "0"
+    },
+    {
+        "Index": "1",
+        "Rank": "1",
+        "Player": "Le'Veon Bell",
+        "Position": "rb",
+        "My Rank": "1",
+        "Avg Rank": "1"
+    },
+    {
+        "Index": "2",
+        "Rank": "3",
+        "Player": "Antonio Brown",
+        "Position": "wr",
+        "My Rank": "3",
+        "Avg Rank": "2"
+    },
+    {
+        "Index": "3",
+        "Rank": "5.0",
+        "Player": "LeSean McCoy",
+        "Position": "rb",
+        "My Rank": "4",
+        "Avg Rank": "6"
+    },
+    {
+        "Index": "4",
+        "Rank": "5",
+        "Player": "Julio Jones",
+        "Position": "wr",
+        "My Rank": "5",
+        "Avg Rank": "3"
+    },
+    {
+        "Index": "5",
+        "Rank": "7.0",
+        "Player": "Devonta Freeman",
+        "Position": "rb",
+        "My Rank": "6",
+        "Avg Rank": "8"
+    },
+    {
+        "Index": "6",
+        "Rank": "8.5",
+        "Player": "A.J. Green",
+        "Position": "wr",
+        "My Rank": "8",
+        "Avg Rank": "9"
+    },
+    {
+        "Index": "7",
+        "Rank": "10.0",
+        "Player": "Ezekiel Elliott",
+        "Position": "rb",
+        "My Rank": "2",
+        "Avg Rank": "18"
+    },
+    {
+        "Index": "8",
+        "Rank": "10",
+        "Player": "Jordy Nelson",
+        "Position": "wr",
+        "My Rank": "10",
+        "Avg Rank": "10"
+    },
+    {
+        "Index": "9",
+        "Rank": "11",
+        "Player": "Melvin Gordon",
+        "Position": "rb",
+        "My Rank": "11",
+        "Avg Rank": "7"
+    },
+    {
+        "Index": "10",
+        "Rank": "12",
+        "Player": "Jay Ajayi",
+        "Position": "rb",
+        "My Rank": "12",
+        "Avg Rank": "11"
+    },
+    {
+        "Index": "11",
+        "Rank": "13",
+        "Player": "Mike Evans",
+        "Position": "wr",
+        "My Rank": "13",
+        "Avg Rank": "5"
+    },
+    {
+        "Index": "12",
+        "Rank": "15",
+        "Player": "Michael Thomas",
+        "Position": "wr",
+        "My Rank": "15",
+        "Avg Rank": "12"
+    },
+    {
+        "Index": "13",
+        "Rank": "16",
+        "Player": "Jordan Howard",
+        "Position": "rb",
+        "My Rank": "16",
+        "Avg Rank": "13"
+    },
+    {
+        "Index": "14",
+        "Rank": "16.5",
+        "Player": "Rob Gronkowski",
+        "Position": "te",
+        "My Rank": "14",
+        "Avg Rank": "19"
+    },
+    {
+        "Index": "15",
+        "Rank": "18",
+        "Player": "Aaron Rodgers",
+        "Position": "qb",
+        "My Rank": "18",
+        "Avg Rank": "15"
+    },
+    {
+        "Index": "16",
+        "Rank": "19",
+        "Player": "DeMarco Murray",
+        "Position": "rb",
+        "My Rank": "19",
+        "Avg Rank": "14"
+    },
+    {
+        "Index": "17",
+        "Rank": "20.0",
+        "Player": "T.Y. Hilton",
+        "Position": "wr",
+        "My Rank": "17",
+        "Avg Rank": "23"
+    },
+    {
+        "Index": "18",
+        "Rank": "22.5",
+        "Player": "Leonard Fournette",
+        "Position": "rb",
+        "My Rank": "20",
+        "Avg Rank": "25"
+    },
+    {
+        "Index": "19",
+        "Rank": "22.5",
+        "Player": "Tom Brady",
+        "Position": "qb",
+        "My Rank": "21",
+        "Avg Rank": "24"
+    },
+    {
+        "Index": "20",
+        "Rank": "23",
+        "Player": "Doug Baldwin",
+        "Position": "wr",
+        "My Rank": "23",
+        "Avg Rank": "22"
+    },
+    {
+        "Index": "21",
+        "Rank": "26.5",
+        "Player": "Lamar Miller",
+        "Position": "rb",
+        "My Rank": "26",
+        "Avg Rank": "27"
+    },
+    {
+        "Index": "22",
+        "Rank": "29.0",
+        "Player": "Demaryius Thomas",
+        "Position": "wr",
+        "My Rank": "28",
+        "Avg Rank": "30"
+    },
+    {
+        "Index": "23",
+        "Rank": "30",
+        "Player": "Amari Cooper",
+        "Position": "wr",
+        "My Rank": "30",
+        "Avg Rank": "17"
+    },
+    {
+        "Index": "24",
+        "Rank": "30.5",
+        "Player": "Travis Kelce",
+        "Position": "te",
+        "My Rank": "29",
+        "Avg Rank": "32"
+    },
+    {
+        "Index": "25",
+        "Rank": "30.5",
+        "Player": "Drew Brees",
+        "Position": "qb",
+        "My Rank": "27",
+        "Avg Rank": "34"
+    },
+    {
+        "Index": "26",
+        "Rank": "30.5",
+        "Player": "Marshawn Lynch",
+        "Position": "rb",
+        "My Rank": "25",
+        "Avg Rank": "36"
+    },
+    {
+        "Index": "27",
+        "Rank": "31",
+        "Player": "DeAndre Hopkins",
+        "Position": "wr",
+        "My Rank": "31",
+        "Avg Rank": "28"
+    },
+    {
+        "Index": "28",
+        "Rank": "33.0",
+        "Player": "Greg Olsen",
+        "Position": "te",
+        "My Rank": "22",
+        "Avg Rank": "44"
+    },
+    {
+        "Index": "29",
+        "Rank": "33",
+        "Player": "Brandin Cooks",
+        "Position": "wr",
+        "My Rank": "33",
+        "Avg Rank": "21"
+    },
+    {
+        "Index": "30",
+        "Rank": "37.5",
+        "Player": "Kareem Hunt",
+        "Position": "rb",
+        "My Rank": "24",
+        "Avg Rank": "51"
+    },
+    {
+        "Index": "31",
+        "Rank": "38.5",
+        "Player": "Carlos Hyde",
+        "Position": "rb",
+        "My Rank": "37",
+        "Avg Rank": "40"
+    },
+    {
+        "Index": "32",
+        "Rank": "38.5",
+        "Player": "Michael Crabtree",
+        "Position": "wr",
+        "My Rank": "36",
+        "Avg Rank": "41"
+    },
+    {
+        "Index": "33",
+        "Rank": "40",
+        "Player": "Christian McCaffrey",
+        "Position": "rb",
+        "My Rank": "40",
+        "Avg Rank": "26"
+    },
+    {
+        "Index": "34",
+        "Rank": "40.5",
+        "Player": "Jordan Reed",
+        "Position": "te",
+        "My Rank": "32",
+        "Avg Rank": "49"
+    },
+    {
+        "Index": "35",
+        "Rank": "41",
+        "Player": "Isaiah Crowell",
+        "Position": "rb",
+        "My Rank": "41",
+        "Avg Rank": "29"
+    },
+    {
+        "Index": "36",
+        "Rank": "41.0",
+        "Player": "Matt Ryan",
+        "Position": "qb",
+        "My Rank": "35",
+        "Avg Rank": "47"
+    },
+    {
+        "Index": "37",
+        "Rank": "44.5",
+        "Player": "Larry Fitzgerald",
+        "Position": "wr",
+        "My Rank": "39",
+        "Avg Rank": "50"
+    },
+    {
+        "Index": "38",
+        "Rank": "44.5",
+        "Player": "Golden Tate",
+        "Position": "wr",
+        "My Rank": "43",
+        "Avg Rank": "46"
+    },
+    {
+        "Index": "39",
+        "Rank": "46",
+        "Player": "Davante Adams",
+        "Position": "wr",
+        "My Rank": "46",
+        "Avg Rank": "39"
+    },
+    {
+        "Index": "40",
+        "Rank": "47",
+        "Player": "Alshon Jeffery",
+        "Position": "wr",
+        "My Rank": "47",
+        "Avg Rank": "37"
+    },
+    {
+        "Index": "41",
+        "Rank": "48",
+        "Player": "Dalvin Cook",
+        "Position": "rb",
+        "My Rank": "48",
+        "Avg Rank": "33"
+    },
+    {
+        "Index": "42",
+        "Rank": "48.5",
+        "Player": "Emmanuel Sanders",
+        "Position": "wr",
+        "My Rank": "34",
+        "Avg Rank": "63"
+    },
+    {
+        "Index": "43",
+        "Rank": "49.0",
+        "Player": "Mark Ingram",
+        "Position": "rb",
+        "My Rank": "45",
+        "Avg Rank": "53"
+    },
+    {
+        "Index": "44",
+        "Rank": "49",
+        "Player": "Dez Bryant",
+        "Position": "wr",
+        "My Rank": "49",
+        "Avg Rank": "16"
+    },
+    {
+        "Index": "45",
+        "Rank": "49.5",
+        "Player": "Russell Wilson",
+        "Position": "qb",
+        "My Rank": "42",
+        "Avg Rank": "57"
+    },
+    {
+        "Index": "46",
+        "Rank": "51.0",
+        "Player": "Jarvis Landry",
+        "Position": "wr",
+        "My Rank": "50",
+        "Avg Rank": "52"
+    },
+    {
+        "Index": "47",
+        "Rank": "51",
+        "Player": "Tyreek Hill",
+        "Position": "wr",
+        "My Rank": "51",
+        "Avg Rank": "43"
+    },
+    {
+        "Index": "48",
+        "Rank": "52",
+        "Player": "Ty Montgomery",
+        "Position": "rb",
+        "My Rank": "52",
+        "Avg Rank": "38"
+    },
+    {
+        "Index": "49",
+        "Rank": "56.5",
+        "Player": "Bilal Powell",
+        "Position": "rb",
+        "My Rank": "53",
+        "Avg Rank": "60"
+    },
+    {
+        "Index": "50",
+        "Rank": "56.5",
+        "Player": "Cam Newton",
+        "Position": "qb",
+        "My Rank": "44",
+        "Avg Rank": "69"
+    },
+    {
+        "Index": "51",
+        "Rank": "58",
+        "Player": "Keenan Allen",
+        "Position": "wr",
+        "My Rank": "58",
+        "Avg Rank": "31"
+    },
+    {
+        "Index": "52",
+        "Rank": "60.5",
+        "Player": "Sammy Watkins",
+        "Position": "wr",
+        "My Rank": "59",
+        "Avg Rank": "62"
+    },
+    {
+        "Index": "53",
+        "Rank": "61",
+        "Player": "Kelvin Benjamin",
+        "Position": "wr",
+        "My Rank": "61",
+        "Avg Rank": "48"
+    },
+    {
+        "Index": "54",
+        "Rank": "61.5",
+        "Player": "Danny Woodhead",
+        "Position": "rb",
+        "My Rank": "55",
+        "Avg Rank": "68"
+    },
+    {
+        "Index": "55",
+        "Rank": "62",
+        "Player": "Allen Robinson",
+        "Position": "wr",
+        "My Rank": "62",
+        "Avg Rank": "45"
+    },
+    {
+        "Index": "56",
+        "Rank": "63.5",
+        "Player": "Jamison Crowder",
+        "Position": "wr",
+        "My Rank": "63",
+        "Avg Rank": "64"
+    },
+    {
+        "Index": "57",
+        "Rank": "64",
+        "Player": "Ameer Abdullah",
+        "Position": "rb",
+        "My Rank": "64",
+        "Avg Rank": "59"
+    },
+    {
+        "Index": "58",
+        "Rank": "66",
+        "Player": "Martavis Bryant",
+        "Position": "wr",
+        "My Rank": "66",
+        "Avg Rank": "58"
+    },
+    {
+        "Index": "59",
+        "Rank": "67",
+        "Player": "Stefon Diggs",
+        "Position": "wr",
+        "My Rank": "67",
+        "Avg Rank": "55"
+    },
+    {
+        "Index": "60",
+        "Rank": "67.0",
+        "Player": "Kyle Rudolph",
+        "Position": "te",
+        "My Rank": "60",
+        "Avg Rank": "74"
+    },
+    {
+        "Index": "61",
+        "Rank": "68.0",
+        "Player": "Jameis Winston",
+        "Position": "qb",
+        "My Rank": "65",
+        "Avg Rank": "71"
+    },
+    {
+        "Index": "62",
+        "Rank": "72",
+        "Player": "DeVante Parker",
+        "Position": "wr",
+        "My Rank": "72",
+        "Avg Rank": "67"
+    },
+    {
+        "Index": "63",
+        "Rank": "72.5",
+        "Player": "Frank Gore",
+        "Position": "rb",
+        "My Rank": "56",
+        "Avg Rank": "89"
+    },
+    {
+        "Index": "64",
+        "Rank": "73",
+        "Player": "Joe Mixon",
+        "Position": "rb",
+        "My Rank": "73",
+        "Avg Rank": "42"
+    },
+    {
+        "Index": "65",
+        "Rank": "74",
+        "Player": "C.J. Anderson",
+        "Position": "rb",
+        "My Rank": "74",
+        "Avg Rank": "54"
+    },
+    {
+        "Index": "66",
+        "Rank": "74.5",
+        "Player": "Terrance West",
+        "Position": "rb",
+        "My Rank": "57",
+        "Avg Rank": "92"
+    },
+    {
+        "Index": "67",
+        "Rank": "75",
+        "Player": "Jimmy Graham",
+        "Position": "te",
+        "My Rank": "75",
+        "Avg Rank": "56"
+    },
+    {
+        "Index": "68",
+        "Rank": "75.5",
+        "Player": "Kirk Cousins",
+        "Position": "qb",
+        "My Rank": "69",
+        "Avg Rank": "82"
+    },
+    {
+        "Index": "69",
+        "Rank": "75.5",
+        "Player": "Pierre Garcon",
+        "Position": "wr",
+        "My Rank": "71",
+        "Avg Rank": "80"
+    },
+    {
+        "Index": "70",
+        "Rank": "77.0",
+        "Player": "Adrian Peterson",
+        "Position": "rb",
+        "My Rank": "76",
+        "Avg Rank": "78"
+    },
+    {
+        "Index": "71",
+        "Rank": "77",
+        "Player": "Brandon Marshall",
+        "Position": "wr",
+        "My Rank": "77",
+        "Avg Rank": "70"
+    },
+    {
+        "Index": "72",
+        "Rank": "79",
+        "Player": "Marcus Mariota",
+        "Position": "qb",
+        "My Rank": "79",
+        "Avg Rank": "77"
+    },
+    {
+        "Index": "73",
+        "Rank": "79.5",
+        "Player": "Matthew Stafford",
+        "Position": "qb",
+        "My Rank": "54",
+        "Avg Rank": "105"
+    },
+    {
+        "Index": "74",
+        "Rank": "80",
+        "Player": "Zach Ertz",
+        "Position": "te",
+        "My Rank": "80",
+        "Avg Rank": "76"
+    },
+    {
+        "Index": "75",
+        "Rank": "80.5",
+        "Player": "Theo Riddick",
+        "Position": "rb",
+        "My Rank": "68",
+        "Avg Rank": "93"
+    },
+    {
+        "Index": "76",
+        "Rank": "81",
+        "Player": "Derek Carr",
+        "Position": "qb",
+        "My Rank": "81",
+        "Avg Rank": "75"
+    },
+    {
+        "Index": "77",
+        "Rank": "83.0",
+        "Player": "Dak Prescott",
+        "Position": "qb",
+        "My Rank": "70",
+        "Avg Rank": "96"
+    },
+    {
+        "Index": "78",
+        "Rank": "84.0",
+        "Player": "Andrew Luck",
+        "Position": "qb",
+        "My Rank": "82",
+        "Avg Rank": "86"
+    },
+    {
+        "Index": "79",
+        "Rank": "84",
+        "Player": "Mike Gillislee",
+        "Position": "rb",
+        "My Rank": "84",
+        "Avg Rank": "72"
+    },
+    {
+        "Index": "80",
+        "Rank": "86.5",
+        "Player": "Randall Cobb",
+        "Position": "wr",
+        "My Rank": "85",
+        "Avg Rank": "88"
+    },
+    {
+        "Index": "81",
+        "Rank": "88.5",
+        "Player": "Donte Moncrief",
+        "Position": "wr",
+        "My Rank": "78",
+        "Avg Rank": "99"
+    },
+    {
+        "Index": "82",
+        "Rank": "89",
+        "Player": "Ben Roethlisberger",
+        "Position": "qb",
+        "My Rank": "89",
+        "Avg Rank": "85"
+    },
+    {
+        "Index": "83",
+        "Rank": "90.0",
+        "Player": "Jeremy Maclin",
+        "Position": "wr",
+        "My Rank": "83",
+        "Avg Rank": "97"
+    },
+    {
+        "Index": "84",
+        "Rank": "91",
+        "Player": "Tevin Coleman",
+        "Position": "rb",
+        "My Rank": "91",
+        "Avg Rank": "61"
+    },
+    {
+        "Index": "85",
+        "Rank": "92",
+        "Player": "Paul Perkins",
+        "Position": "rb",
+        "My Rank": "92",
+        "Avg Rank": "81"
+    },
+    {
+        "Index": "86",
+        "Rank": "93",
+        "Player": "DeSean Jackson",
+        "Position": "wr",
+        "My Rank": "93",
+        "Avg Rank": "87"
+    },
+    {
+        "Index": "87",
+        "Rank": "96",
+        "Player": "Delanie Walker",
+        "Position": "te",
+        "My Rank": "96",
+        "Avg Rank": "79"
+    },
+    {
+        "Index": "88",
+        "Rank": "98.5",
+        "Player": "James White",
+        "Position": "rb",
+        "My Rank": "87",
+        "Avg Rank": "110"
+    },
+    {
+        "Index": "89",
+        "Rank": "100",
+        "Player": "Philip Rivers",
+        "Position": "qb",
+        "My Rank": "100",
+        "Avg Rank": "100"
+    },
+    {
+        "Index": "90",
+        "Rank": "101.5",
+        "Player": "Matt Forte",
+        "Position": "rb",
+        "My Rank": "90",
+        "Avg Rank": "113"
+    },
+    {
+        "Index": "91",
+        "Rank": "103.0",
+        "Player": "Adam Thielen",
+        "Position": "wr",
+        "My Rank": "98",
+        "Avg Rank": "108"
+    },
+    {
+        "Index": "92",
+        "Rank": "108",
+        "Player": "Chris Hogan",
+        "Position": "wr",
+        "My Rank": "108",
+        "Avg Rank": "104"
+    },
+    {
+        "Index": "93",
+        "Rank": "109.5",
+        "Player": "Jordan Matthews",
+        "Position": "wr",
+        "My Rank": "101",
+        "Avg Rank": "118"
+    },
+    {
+        "Index": "94",
+        "Rank": "110.0",
+        "Player": "Mike Wallace",
+        "Position": "wr",
+        "My Rank": "103",
+        "Avg Rank": "117"
+    },
+    {
+        "Index": "95",
+        "Rank": "111",
+        "Player": "Rob Kelley",
+        "Position": "rb",
+        "My Rank": "111",
+        "Avg Rank": "90"
+    },
+    {
+        "Index": "96",
+        "Rank": "111.0",
+        "Player": "Andy Dalton",
+        "Position": "qb",
+        "My Rank": "97",
+        "Avg Rank": "125"
+    },
+    {
+        "Index": "97",
+        "Rank": "114.0",
+        "Player": "Stephen Gostkowski",
+        "Position": "k",
+        "My Rank": "94",
+        "Avg Rank": "134"
+    },
+    {
+        "Index": "98",
+        "Rank": "114.5",
+        "Player": "Eli Manning",
+        "Position": "qb",
+        "My Rank": "105",
+        "Avg Rank": "124"
+    },
+    {
+        "Index": "99",
+        "Rank": "115.0",
+        "Player": "Kenny Britt",
+        "Position": "wr",
+        "My Rank": "107",
+        "Avg Rank": "123"
+    },
+    {
+        "Index": "100",
+        "Rank": "116.5",
+        "Player": "Darren Sproles",
+        "Position": "rb",
+        "My Rank": "104",
+        "Avg Rank": "129"
+    },
+    {
+        "Index": "101",
+        "Rank": "117",
+        "Player": "Eric Ebron",
+        "Position": "te",
+        "My Rank": "117",
+        "Avg Rank": "112"
+    },
+    {
+        "Index": "102",
+        "Rank": "118",
+        "Player": "Martellus Bennett",
+        "Position": "te",
+        "My Rank": "118",
+        "Avg Rank": "84"
+    },
+    {
+        "Index": "103",
+        "Rank": "118.5",
+        "Player": "Carson Wentz",
+        "Position": "qb",
+        "My Rank": "109",
+        "Avg Rank": "128"
+    },
+    {
+        "Index": "104",
+        "Rank": "119",
+        "Player": "Corey Davis",
+        "Position": "wr",
+        "My Rank": "119",
+        "Avg Rank": "119"
+    },
+    {
+        "Index": "105",
+        "Rank": "120.0",
+        "Player": "Jack Doyle",
+        "Position": "te",
+        "My Rank": "110",
+        "Avg Rank": "130"
+    },
+    {
+        "Index": "106",
+        "Rank": "121",
+        "Player": "Eric Decker",
+        "Position": "wr",
+        "My Rank": "121",
+        "Avg Rank": "95"
+    },
+    {
+        "Index": "107",
+        "Rank": "122.0",
+        "Player": "Justin Tucker",
+        "Position": "k",
+        "My Rank": "106",
+        "Avg Rank": "138"
+    },
+    {
+        "Index": "108",
+        "Rank": "125.5",
+        "Player": "Giovani Bernard",
+        "Position": "rb",
+        "My Rank": "95",
+        "Avg Rank": "156"
+    },
+    {
+        "Index": "109",
+        "Rank": "127",
+        "Player": "Tyler Eifert",
+        "Position": "te",
+        "My Rank": "127",
+        "Avg Rank": "73"
+    },
+    {
+        "Index": "110",
+        "Rank": "129.5",
+        "Player": "Carson Palmer",
+        "Position": "qb",
+        "My Rank": "123",
+        "Avg Rank": "136"
+    },
+    {
+        "Index": "111",
+        "Rank": "133.0",
+        "Player": "Jason Witten",
+        "Position": "te",
+        "My Rank": "126",
+        "Avg Rank": "140"
+    },
+    {
+        "Index": "112",
+        "Rank": "133",
+        "Player": "Tyrell Williams",
+        "Position": "wr",
+        "My Rank": "133",
+        "Avg Rank": "103"
+    },
+    {
+        "Index": "113",
+        "Rank": "135",
+        "Player": "Eddie Lacy",
+        "Position": "rb",
+        "My Rank": "135",
+        "Avg Rank": "98"
+    },
+    {
+        "Index": "114",
+        "Rank": "136.0",
+        "Player": "Matt Bryant",
+        "Position": "k",
+        "My Rank": "122",
+        "Avg Rank": "150"
+    },
+    {
+        "Index": "115",
+        "Rank": "137",
+        "Player": "Hunter Henry",
+        "Position": "te",
+        "My Rank": "137",
+        "Avg Rank": "102"
+    },
+    {
+        "Index": "116",
+        "Rank": "138",
+        "Player": "Doug Martin",
+        "Position": "rb",
+        "My Rank": "138",
+        "Avg Rank": "65"
+    },
+    {
+        "Index": "117",
+        "Rank": "140",
+        "Player": "Willie Snead",
+        "Position": "wr",
+        "My Rank": "140",
+        "Avg Rank": "66"
+    },
+    {
+        "Index": "118",
+        "Rank": "147",
+        "Player": "Rishard Matthews",
+        "Position": "wr",
+        "My Rank": "147",
+        "Avg Rank": "131"
+    },
+    {
+        "Index": "119",
+        "Rank": "150",
+        "Player": "Kevin White",
+        "Position": "wr",
+        "My Rank": "150",
+        "Avg Rank": "146"
+    },
+    {
+        "Index": "120",
+        "Rank": "151.5",
+        "Player": "Joe Flacco",
+        "Position": "qb",
+        "My Rank": "141",
+        "Avg Rank": "162"
+    },
+    {
+        "Index": "121",
+        "Rank": "152.5",
+        "Player": "Dan Bailey",
+        "Position": "k",
+        "My Rank": "142",
+        "Avg Rank": "163"
+    },
+    {
+        "Index": "122",
+        "Rank": "154.0",
+        "Player": "Mason Crosby",
+        "Position": "k",
+        "My Rank": "134",
+        "Avg Rank": "174"
+    },
+    {
+        "Index": "123",
+        "Rank": "155.0",
+        "Player": "Chris Thompson",
+        "Position": "rb",
+        "My Rank": "128",
+        "Avg Rank": "182"
+    },
+    {
+        "Index": "124",
+        "Rank": "155",
+        "Player": "Jonathan Stewart",
+        "Position": "rb",
+        "My Rank": "155",
+        "Avg Rank": "111"
+    },
+    {
+        "Index": "125",
+        "Rank": "156",
+        "Player": "Coby Fleener",
+        "Position": "te",
+        "My Rank": "156",
+        "Avg Rank": "143"
+    },
+    {
+        "Index": "126",
+        "Rank": "158",
+        "Player": "Zay Jones",
+        "Position": "wr",
+        "My Rank": "158",
+        "Avg Rank": "152"
+    },
+    {
+        "Index": "127",
+        "Rank": "160.5",
+        "Player": "Adam Vinatieri",
+        "Position": "k",
+        "My Rank": "131",
+        "Avg Rank": "190"
+    },
+    {
+        "Index": "128",
+        "Rank": "161",
+        "Player": "Sterling Shepard",
+        "Position": "wr",
+        "My Rank": "161",
+        "Avg Rank": "144"
+    },
+    {
+        "Index": "129",
+        "Rank": "162",
+        "Player": "Austin Hooper",
+        "Position": "te",
+        "My Rank": "162",
+        "Avg Rank": "151"
+    },
+    {
+        "Index": "130",
+        "Rank": "163.0",
+        "Player": "Tyler Lockett",
+        "Position": "wr",
+        "My Rank": "153",
+        "Avg Rank": "173"
+    },
+    {
+        "Index": "131",
+        "Rank": "165.5",
+        "Player": "Sam Bradford",
+        "Position": "qb",
+        "My Rank": "159",
+        "Avg Rank": "172"
+    },
+    {
+        "Index": "132",
+        "Rank": "168",
+        "Player": "Cole Beasley",
+        "Position": "wr",
+        "My Rank": "168",
+        "Avg Rank": "149"
+    },
+    {
+        "Index": "133",
+        "Rank": "170.0",
+        "Player": "Matt Prater",
+        "Position": "k",
+        "My Rank": "136",
+        "Avg Rank": "204"
+    },
+    {
+        "Index": "134",
+        "Rank": "170",
+        "Player": "Mohamed Sanu",
+        "Position": "wr",
+        "My Rank": "170",
+        "Avg Rank": "166"
+    },
+    {
+        "Index": "135",
+        "Rank": "172.0",
+        "Player": "Shane Vereen",
+        "Position": "rb",
+        "My Rank": "160",
+        "Avg Rank": "184"
+    },
+    {
+        "Index": "136",
+        "Rank": "174.0",
+        "Player": "Torrey Smith",
+        "Position": "wr",
+        "My Rank": "139",
+        "Avg Rank": "209"
+    },
+    {
+        "Index": "137",
+        "Rank": "176",
+        "Player": "John Brown",
+        "Position": "wr",
+        "My Rank": "176",
+        "Avg Rank": "121"
+    },
+    {
+        "Index": "138",
+        "Rank": "177.5",
+        "Player": "Sebastian Janikowski",
+        "Position": "k",
+        "My Rank": "157",
+        "Avg Rank": "198"
+    },
+    {
+        "Index": "139",
+        "Rank": "178.5",
+        "Player": "Wil Lutz",
+        "Position": "k",
+        "My Rank": "165",
+        "Avg Rank": "192"
+    },
+    {
+        "Index": "140",
+        "Rank": "179",
+        "Player": "Corey Coleman",
+        "Position": "wr",
+        "My Rank": "179",
+        "Avg Rank": "109"
+    },
+    {
+        "Index": "141",
+        "Rank": "183",
+        "Player": "Cameron Brate",
+        "Position": "te",
+        "My Rank": "183",
+        "Avg Rank": "164"
+    },
+    {
+        "Index": "142",
+        "Rank": "184.5",
+        "Player": "Marqise Lee",
+        "Position": "wr",
+        "My Rank": "169",
+        "Avg Rank": "200"
+    },
+    {
+        "Index": "143",
+        "Rank": "184.5",
+        "Player": "Danny Amendola",
+        "Position": "wr",
+        "My Rank": "184",
+        "Avg Rank": "185"
+    },
+    {
+        "Index": "144",
+        "Rank": "185",
+        "Player": "Robby Anderson",
+        "Position": "wr",
+        "My Rank": "185",
+        "Avg Rank": "154"
+    },
+    {
+        "Index": "145",
+        "Rank": "185.0",
+        "Player": "Blair Walsh",
+        "Position": "k",
+        "My Rank": "144",
+        "Avg Rank": "226"
+    },
+    {
+        "Index": "146",
+        "Rank": "186.0",
+        "Player": "Chris Boswell",
+        "Position": "k",
+        "My Rank": "148",
+        "Avg Rank": "224"
+    },
+    {
+        "Index": "147",
+        "Rank": "186.5",
+        "Player": "Graham Gano",
+        "Position": "k",
+        "My Rank": "143",
+        "Avg Rank": "230"
+    },
+    {
+        "Index": "148",
+        "Rank": "187",
+        "Player": "Jared Cook",
+        "Position": "te",
+        "My Rank": "187",
+        "Avg Rank": "176"
+    },
+    {
+        "Index": "149",
+        "Rank": "187.5",
+        "Player": "C.J. Fiedorowicz",
+        "Position": "te",
+        "My Rank": "180",
+        "Avg Rank": "195"
+    },
+    {
+        "Index": "150",
+        "Rank": "189.0",
+        "Player": "Cairo Santos",
+        "Position": "k",
+        "My Rank": "173",
+        "Avg Rank": "205"
+    },
+    {
+        "Index": "151",
+        "Rank": "190",
+        "Player": "Jamaal Charles",
+        "Position": "rb",
+        "My Rank": "190",
+        "Avg Rank": "147"
+    },
+    {
+        "Index": "152",
+        "Rank": "193.0",
+        "Player": "Charles Clay",
+        "Position": "te",
+        "My Rank": "174",
+        "Avg Rank": "212"
+    },
+    {
+        "Index": "153",
+        "Rank": "196",
+        "Player": "Taylor Gabriel",
+        "Position": "wr",
+        "My Rank": "196",
+        "Avg Rank": "170"
+    },
+    {
+        "Index": "154",
+        "Rank": "197",
+        "Player": "Evan Engram",
+        "Position": "te",
+        "My Rank": "197",
+        "Avg Rank": "177"
+    },
+    {
+        "Index": "155",
+        "Rank": "199",
+        "Player": "C.J. Prosise",
+        "Position": "rb",
+        "My Rank": "199",
+        "Avg Rank": "132"
+    },
+    {
+        "Index": "156",
+        "Rank": "200.5",
+        "Player": "Dustin Hopkins",
+        "Position": "k",
+        "My Rank": "163",
+        "Avg Rank": "238"
+    },
+    {
+        "Index": "157",
+        "Rank": "201.0",
+        "Player": "Charles Sims",
+        "Position": "rb",
+        "My Rank": "195",
+        "Avg Rank": "207"
+    },
+    {
+        "Index": "158",
+        "Rank": "202",
+        "Player": "Kenny Golladay",
+        "Position": "wr",
+        "My Rank": "202",
+        "Avg Rank": "169"
+    },
+    {
+        "Index": "159",
+        "Rank": "204.0",
+        "Player": "Caleb Sturgis",
+        "Position": "k",
+        "My Rank": "167",
+        "Avg Rank": "241"
+    },
+    {
+        "Index": "160",
+        "Rank": "209.5",
+        "Player": "Devin Funchess",
+        "Position": "wr",
+        "My Rank": "192",
+        "Avg Rank": "227"
+    },
+    {
+        "Index": "161",
+        "Rank": "210",
+        "Player": "Alex Smith",
+        "Position": "qb",
+        "My Rank": "210",
+        "Avg Rank": "168"
+    },
+    {
+        "Index": "162",
+        "Rank": "211",
+        "Player": "LeGarrette Blount",
+        "Position": "rb",
+        "My Rank": "211",
+        "Avg Rank": "91"
+    },
+    {
+        "Index": "163",
+        "Rank": "212",
+        "Player": "Breshad Perriman",
+        "Position": "wr",
+        "My Rank": "212",
+        "Avg Rank": "199"
+    },
+    {
+        "Index": "164",
+        "Rank": "213.5",
+        "Player": "Brandon McManus",
+        "Position": "k",
+        "My Rank": "198",
+        "Avg Rank": "229"
+    },
+    {
+        "Index": "165",
+        "Rank": "217",
+        "Player": "Julius Thomas",
+        "Position": "te",
+        "My Rank": "217",
+        "Avg Rank": "158"
+    },
+    {
+        "Index": "166",
+        "Rank": "218.0",
+        "Player": "Phil Dawson",
+        "Position": "k",
+        "My Rank": "171",
+        "Avg Rank": "265"
+    },
+    {
+        "Index": "167",
+        "Rank": "218",
+        "Player": "Antonio Gates",
+        "Position": "te",
+        "My Rank": "218",
+        "Avg Rank": "194"
+    },
+    {
+        "Index": "168",
+        "Rank": "219.0",
+        "Player": "Kai Forbath",
+        "Position": "k",
+        "My Rank": "172",
+        "Avg Rank": "266"
+    },
+    {
+        "Index": "169",
+        "Rank": "219",
+        "Player": "Alvin Kamara",
+        "Position": "rb",
+        "My Rank": "219",
+        "Avg Rank": "153"
+    },
+    {
+        "Index": "170",
+        "Rank": "221",
+        "Player": "Josh Doctson",
+        "Position": "wr",
+        "My Rank": "221",
+        "Avg Rank": "160"
+    },
+    {
+        "Index": "171",
+        "Rank": "222",
+        "Player": "Kenny Stills",
+        "Position": "wr",
+        "My Rank": "222",
+        "Avg Rank": "193"
+    },
+    {
+        "Index": "172",
+        "Rank": "223",
+        "Player": "Kendall Wright",
+        "Position": "wr",
+        "My Rank": "223",
+        "Avg Rank": "213"
+    },
+    {
+        "Index": "173",
+        "Rank": "224",
+        "Player": "Jay Cutler",
+        "Position": "qb",
+        "My Rank": "224",
+        "Avg Rank": "155"
+    },
+    {
+        "Index": "174",
+        "Rank": "226",
+        "Player": "DeShone Kizer",
+        "Position": "qb",
+        "My Rank": "226",
+        "Avg Rank": "217"
+    },
+    {
+        "Index": "175",
+        "Rank": "227",
+        "Player": "Derrick Henry",
+        "Position": "rb",
+        "My Rank": "227",
+        "Avg Rank": "83"
+    },
+    {
+        "Index": "176",
+        "Rank": "229",
+        "Player": "Trevor Siemian",
+        "Position": "qb",
+        "My Rank": "229",
+        "Avg Rank": "196"
+    },
+    {
+        "Index": "177",
+        "Rank": "229.0",
+        "Player": "Nick Folk",
+        "Position": "k",
+        "My Rank": "181",
+        "Avg Rank": "277"
+    },
+    {
+        "Index": "178",
+        "Rank": "230",
+        "Player": "Tyrod Taylor",
+        "Position": "qb",
+        "My Rank": "230",
+        "Avg Rank": "148"
+    },
+    {
+        "Index": "179",
+        "Rank": "230.5",
+        "Player": "Robert Turbin",
+        "Position": "rb",
+        "My Rank": "215",
+        "Avg Rank": "246"
+    },
+    {
+        "Index": "180",
+        "Rank": "231",
+        "Player": "Allen Hurns",
+        "Position": "wr",
+        "My Rank": "231",
+        "Avg Rank": "202"
+    },
+    {
+        "Index": "181",
+        "Rank": "235",
+        "Player": "O.J. Howard",
+        "Position": "te",
+        "My Rank": "235",
+        "Avg Rank": "161"
+    },
+    {
+        "Index": "182",
+        "Rank": "236",
+        "Player": "J.J. Nelson",
+        "Position": "wr",
+        "My Rank": "236",
+        "Avg Rank": "216"
+    },
+    {
+        "Index": "183",
+        "Rank": "239",
+        "Player": "Robert Woods",
+        "Position": "wr",
+        "My Rank": "239",
+        "Avg Rank": "211"
+    },
+    {
+        "Index": "184",
+        "Rank": "241",
+        "Player": "T.J. Yeldon",
+        "Position": "rb",
+        "My Rank": "241",
+        "Avg Rank": "222"
+    },
+    {
+        "Index": "185",
+        "Rank": "241.5",
+        "Player": "Zane Gonzalez",
+        "Position": "k",
+        "My Rank": "216",
+        "Avg Rank": "267"
+    },
+    {
+        "Index": "186",
+        "Rank": "243.5",
+        "Player": "Austin Seferian-Jenkins",
+        "Position": "te",
+        "My Rank": "233",
+        "Avg Rank": "254"
+    },
+    {
+        "Index": "187",
+        "Rank": "245.0",
+        "Player": "Paul Richardson",
+        "Position": "wr",
+        "My Rank": "234",
+        "Avg Rank": "256"
+    },
+    {
+        "Index": "188",
+        "Rank": "246",
+        "Player": "Brian Hoyer",
+        "Position": "qb",
+        "My Rank": "246",
+        "Avg Rank": "210"
+    },
+    {
+        "Index": "189",
+        "Rank": "247",
+        "Player": "Rex Burkhead",
+        "Position": "rb",
+        "My Rank": "247",
+        "Avg Rank": "145"
+    },
+    {
+        "Index": "190",
+        "Rank": "249.0",
+        "Player": "Tyler Higbee",
+        "Position": "te",
+        "My Rank": "240",
+        "Avg Rank": "258"
+    },
+    {
+        "Index": "191",
+        "Rank": "250",
+        "Player": "Wendell Smallwood",
+        "Position": "rb",
+        "My Rank": "250",
+        "Avg Rank": "178"
+    },
+    {
+        "Index": "192",
+        "Rank": "250.5",
+        "Player": "Marquise Goodwin",
+        "Position": "wr",
+        "My Rank": "220",
+        "Avg Rank": "281"
+    },
+    {
+        "Index": "193",
+        "Rank": "253",
+        "Player": "Blake Bortles",
+        "Position": "qb",
+        "My Rank": "253",
+        "Avg Rank": "179"
+    },
+    {
+        "Index": "194",
+        "Rank": "253.5",
+        "Player": "Curtis Samuel",
+        "Position": "wr",
+        "My Rank": "244",
+        "Avg Rank": "263"
+    },
+    {
+        "Index": "195",
+        "Rank": "254",
+        "Player": "David Njoku",
+        "Position": "te",
+        "My Rank": "254",
+        "Avg Rank": "219"
+    },
+    {
+        "Index": "196",
+        "Rank": "254.5",
+        "Player": "Terrance Williams",
+        "Position": "wr",
+        "My Rank": "237",
+        "Avg Rank": "272"
+    },
+    {
+        "Index": "197",
+        "Rank": "255",
+        "Player": "Jared Goff",
+        "Position": "qb",
+        "My Rank": "255",
+        "Avg Rank": "206"
+    },
+    {
+        "Index": "198",
+        "Rank": "256",
+        "Player": "Zach Miller",
+        "Position": "te",
+        "My Rank": "256",
+        "Avg Rank": "232"
+    },
+    {
+        "Index": "199",
+        "Rank": "258",
+        "Player": "Jalen Richard",
+        "Position": "rb",
+        "My Rank": "258",
+        "Avg Rank": "225"
+    },
+    {
+        "Index": "200",
+        "Rank": "259.0",
+        "Player": "Jermaine Gresham",
+        "Position": "te",
+        "My Rank": "249",
+        "Avg Rank": "269"
+    },
+    {
+        "Index": "201",
+        "Rank": "259",
+        "Player": "Latavius Murray",
+        "Position": "rb",
+        "My Rank": "259",
+        "Avg Rank": "142"
+    },
+    {
+        "Index": "202",
+        "Rank": "260.0",
+        "Player": "Branden Oliver",
+        "Position": "rb",
+        "My Rank": "238",
+        "Avg Rank": "282"
+    },
+    {
+        "Index": "203",
+        "Rank": "261",
+        "Player": "DeAndre Washington",
+        "Position": "rb",
+        "My Rank": "261",
+        "Avg Rank": "186"
+    },
+    {
+        "Index": "204",
+        "Rank": "262",
+        "Player": "Jamaal Williams",
+        "Position": "rb",
+        "My Rank": "262",
+        "Avg Rank": "120"
+    },
+    {
+        "Index": "205",
+        "Rank": "264",
+        "Player": "Charcandrick West",
+        "Position": "rb",
+        "My Rank": "264",
+        "Avg Rank": "208"
+    },
+    {
+        "Index": "206",
+        "Rank": "265",
+        "Player": "Jesse James",
+        "Position": "te",
+        "My Rank": "265",
+        "Avg Rank": "220"
+    },
+    {
+        "Index": "207",
+        "Rank": "267",
+        "Player": "Jacquizz Rodgers",
+        "Position": "rb",
+        "My Rank": "267",
+        "Avg Rank": "126"
+    },
+    {
+        "Index": "208",
+        "Rank": "268",
+        "Player": "Tarik Cohen",
+        "Position": "rb",
+        "My Rank": "268",
+        "Avg Rank": "248"
+    },
+    {
+        "Index": "209",
+        "Rank": "269",
+        "Player": "Thomas Rawls",
+        "Position": "rb",
+        "My Rank": "269",
+        "Avg Rank": "106"
+    },
+    {
+        "Index": "210",
+        "Rank": "272",
+        "Player": "Darren McFadden",
+        "Position": "rb",
+        "My Rank": "272",
+        "Avg Rank": "94"
+    },
+    {
+        "Index": "211",
+        "Rank": "274",
+        "Player": "Vernon Davis",
+        "Position": "te",
+        "My Rank": "274",
+        "Avg Rank": "262"
+    },
+    {
+        "Index": "212",
+        "Rank": "277",
+        "Player": "A.J. Derby",
+        "Position": "te",
+        "My Rank": "277",
+        "Avg Rank": "275"
+    },
+    {
+        "Index": "213",
+        "Rank": "278",
+        "Player": "Jeremy Hill",
+        "Position": "rb",
+        "My Rank": "278",
+        "Avg Rank": "137"
+    },
+    {
+        "Index": "214",
+        "Rank": "279",
+        "Player": "George Kittle",
+        "Position": "te",
+        "My Rank": "279",
+        "Avg Rank": "274"
+    },
+    {
+        "Index": "215",
+        "Rank": "280",
+        "Player": "Vance McDonald",
+        "Position": "te",
+        "My Rank": "280",
+        "Avg Rank": "271"
+    },
+    {
+        "Index": "216",
+        "Rank": "282",
+        "Player": "Devontae Booker",
+        "Position": "rb",
+        "My Rank": "282",
+        "Avg Rank": "236"
+    },
+    {
+        "Index": "217",
+        "Rank": "284",
+        "Player": "Samaje Perine",
+        "Position": "rb",
+        "My Rank": "284",
+        "Avg Rank": "127"
+    },
+    {
+        "Index": "218",
+        "Rank": "285",
+        "Player": "Deshaun Watson",
+        "Position": "qb",
+        "My Rank": "285",
+        "Avg Rank": "191"
+    }
+]
