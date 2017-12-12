@@ -143,6 +143,7 @@ for player in CACHE_DICTION['wr_rankings'][1:]:
 	conn.commit()
 #te
 
+
 cur.execute('DROP TABLE IF EXISTS TE')
 cur.execute('CREATE TABLE TE (Player TEXT, CA NUMBER, Pass_YDS NUMBER, Pass_TD NUMBER, INT NUMBER, RUSH NUMBER, Rush_YDS NUMBER, REC NUMBER, Rec_YDS NUMBER, Rec_TD NUMBER, PTS NUMBER)')
 
