@@ -1,12 +1,21 @@
 import pandas as pd
+import sqlite3
+# QB_df = pd.read_csv('qb.csv')
+# RB_df = pd.read_csv('rb.csv')
+# TE_df = pd.read_csv('te.csv')
+# D_df = pd.read_csv('d.csv')
+# K_df = pd.read_csv('K.csv')
+# WR_df = pd.read_csv('wr.csv')
+# avg_draft = pd.read_csv('avg_draft.csv')
+conn = sqlite3.connect('FinalDB.sqlite')
 
-QB_df = pd.read_csv('qb.csv')
-RB_df = pd.read_csv('rb.csv')
-TE_df = pd.read_csv('te.csv')
-D_df = pd.read_csv('d.csv')
-K_df = pd.read_csv('K.csv')
-WR_df = pd.read_csv('wr.csv')
-avg_draft = pd.read_csv('avg_draft.csv')
+QB_df = pd.read_sql_query('SELECT * FROM QB;', conn)
+RB_df = pd.read_sql_query('SELECT * FROM RB;', conn)
+TE_df = pd.read_sql_query('SELECT * FROM TE;', conn)
+D_df = pd.read_sql_query('SELECT * FROM D;', conn)
+K_df = pd.read_sql_query('SELECT * FROM K;', conn)
+WR_df = pd.read_sql_query('SELECT * FROM WR;', conn)
+avg_draft = pd.read_sql_query('SELECT * FROM AVG_Rankings;', conn)
 
 #add ranks to avg draft (will be used later)
 if 'Rank' not in avg_draft: avg_draft.insert(0, 'Rank', avg_draft.index)
@@ -53,10 +62,12 @@ def get_rankings():
 	if 'Rank' not in df: df.insert(0, 'Rank', ind)
 	try:
 		print('reading from cache')
-		pd.read_csv('rankings.csv')
+		#pd.read_csv('rankings.csv')
+		pd.read_sql_query('SELECT * FROM Rankings;', conn)
 	except:
 		print('creating new rankings list')
-		df.to_csv('rankings.csv')
+		#df.to_csv('rankings.csv')
+		df.to_sql('Rankings', conn, if_exists='replace')
 	df = df[:286]
 	return df
 
@@ -76,6 +87,8 @@ def final_rankings(avg_rankings = get_avg_rankings(), rankings = get_rankings())
 	final_rankings = pd.DataFrame(columns = ['Rank', 'Player', 'Position', 'My Rank', 'Avg Rank'], index = list(range(len(avg_rankings))))
 	count = 0
 	for player in rankings['Player']:
+		#print(player)
+		#print(avg_rankings['Player'].values)
 		if player in avg_rankings['Player'].values:
 			rank = find_rank(player)
 			avg_rank = find_avg_rank(player)
@@ -92,6 +105,7 @@ def final_rankings(avg_rankings = get_avg_rankings(), rankings = get_rankings())
 	final_rankings = final_rankings.dropna(how ='all')
 	final_rankings = final_rankings.reset_index(drop = True)
 	final_rankings.to_csv('final_rankings.csv')
+	final_rankings.to_sql('Final_Rankings', conn, if_exists='replace')
 	return final_rankings
 
 def main():
@@ -100,6 +114,7 @@ def main():
 	#print(avg_draft)
 	final = final_rankings()
 	print(final)
+	#print(find_position('Broncos'))
 	#print(get_rankings())
 	#print(find_position('David Johnson'))
 

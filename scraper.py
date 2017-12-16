@@ -6,14 +6,7 @@ import json
 import csv
 from pprint import pprint
 import sqlite3
-# baseurl = 'http://api.fantasy.nfl.com/v1/players/editordraftranks'
-# url_params = {}
-# url_params['count'] = 100
-# url_params['format'] = 'json'
-# #'http://api.fantasy.nfl.com/v1/players/stats?statType=seasonStats&season=2010&week=1&format=json'
-# req = requests.get(baseurl, params = url_params)
-# clean_data = json.loads(req.text)
-# pprint(clean_data)
+
 
 csvfile = open('final_rankings.csv', 'r')
 jsonfile = open('cache.json', 'w')
@@ -26,7 +19,7 @@ csvfile.close()
 
 csvfile = open('avg_draft.csv', 'r')
 
-fieldnames = ('Rank','Player')
+fieldnames = ('Rank','Player','Position')
 reader = csv.DictReader(csvfile, fieldnames)
 CACHE_DICTION['avg_rankings'] = [row for row in reader]
 csvfile.close()
@@ -89,12 +82,12 @@ for player in CACHE_DICTION['final_rankings'][1:]:
 
 #avg_ranks
 cur.execute('DROP TABLE IF EXISTS AVG_Rankings')
-cur.execute('CREATE TABLE AVG_Rankings (Rank NUMBER, Player TEXT)')
+cur.execute('CREATE TABLE AVG_Rankings (Rank NUMBER, Player TEXT, Position TEXT)')
 
 
-for player in CACHE_DICTION['avg_rankings']:
-	ar_tup = player['Rank'], player['Player']
-	cur.execute('INSERT INTO AVG_Rankings VALUES (?, ?)', ar_tup)
+for player in CACHE_DICTION['avg_rankings'][1:]:
+	ar_tup = player['Rank'], player['Player'], player['Position']
+	cur.execute('INSERT INTO AVG_Rankings VALUES (?, ?, ?)', ar_tup)
 	conn.commit()
 
 #d
