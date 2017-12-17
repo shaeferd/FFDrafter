@@ -21,16 +21,16 @@
 
 ## Results
 
-I added the cumulative fantasy points of each team’s starters (and backups/free agents if a starter became injured/inactive) and gave each team a total score. This represents a quantified estimate of the team's performance.
+I added the cumulative fantasy points of each team’s starters (and backups/free agents if a starter became inactive) and gave each team a total score. This represents a quantified estimate of the team's performance.
 
 
 ![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Team_Results.png?raw=true)
 
-Player 1, using “Value Based Drafting”, had the 3rd highest score. Results are inconclusive given random error (injuries) and minimal trial numbers (only 1 season tested).
+Player 1, using “Value Based Drafting”, had the 3rd highest score. Results are inconclusive given random error (injuries), statistical insignificance, and minimal trial numbers (only 1 season tested).
 
-## Extra:
+## Extra
 ![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Scores_V_Projections.png?raw=true)
 
-The projected scores seemed to be a pretty close match to actual scores aside from outliers (mostly injured players)
+The projected scores seemed to be a pretty close match to actual scores aside from outliers (mostly inactive players)
 
 
