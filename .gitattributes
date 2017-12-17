@@ -1,1 +1,1 @@
-*.sqlite linguist-language=SQL
+*.sqlite text linguist-language=SQL
