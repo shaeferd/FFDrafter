@@ -11,5 +11,5 @@ team = [num for lst in cur.execute('SELECT Team FROM Team_Score').fetchall() for
 score = [num for lst in cur.execute('SELECT Score FROM Team_Score').fetchall() for num in lst]
 
 
-team_score_df.plot('Team', 'Score', kind = 'bar', title = 'Total Points Per Team')
+team_score_df.plot('Team', 'Score', kind = 'bar', title = 'Estimated Score Per Team')
 plt.show()
