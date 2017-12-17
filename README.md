@@ -14,15 +14,21 @@ Explanation: This program has 2 separate AI:
 	
 	2. Players 2-8 (AutoDraft Class): Drafts based on the “Average Draft Position” of all players according to data from mock drafts and live drafts. (Date scraped from ESPN, NFL, and footballguys.com API)
 
-Step 4: To see results of 2017 test, run “python3 results.py” or open “Team_Results.png”
+Step 4: To see results of 2017 test, run “python3 results.py” or look below
 
 Explanation: I added the cumulative fantasy points of each team’s starters (and backups/free agents if a starter became injured/inactive) and gave each team a total score.
 
-Result: Player 1, using “Value Based Drafting”, had the 3rd highest score. Results are inconclusive given random error (injuries) and minimal trial numbers (only 1 season tested). 
+Result:
+
+![alt text](https://github.com/shaeferd/FFDrafter/tree/master/Visualization/Team_Results.png)
+
+Player 1, using “Value Based Drafting”, had the 3rd highest score. Results are inconclusive given random error (injuries) and minimal trial numbers (only 1 season tested).
 
 Extra:
 
-To see a scatterplot of NFL Fantasy Football’s projected scores vs actual scores, run “python3 projections.py”. The projected scores seemed to be a pretty close match aside from outliers (mostly injured players)
+![alt text](https://github.com/shaeferd/FFDrafter/tree/master/Visualization/Scores_V_Projections.png)
+
+To create a scatterplot of NFL Fantasy Football’s projected scores vs actual scores, run “python3 projections.py”. The projected scores seemed to be a pretty close match aside from outliers (mostly injured players)
 
 
 TODO:
