@@ -2,6 +2,8 @@
 import pandas as pd
 import sqlite3
 import json
+
+#Alternative to SQL (Uses csv files)
 #final_ranks = pd.read_csv('final_rankings.csv')
 #avg_ranks = pd.read_csv('avg_draft.csv')
 #rankings = pd.read_csv('rankings.csv')
@@ -24,6 +26,8 @@ class Draft():
 	def __init__(self):
 		self.my_ranks = final_ranks.copy()
 		self.my_team = []
+		self.my_starters = []
+		self.my_backups = []
 		self.round = 0
 		self.my_wrs = []
 		self.my_rbs = []
@@ -39,35 +43,44 @@ class Draft():
 		self.update_ranks()
 		player = self.my_ranks['Player'][0]
 		print('team selects...', player)
-		print(self.my_ranks['Player'][0])
-		print('next', self.my_ranks['Player'][1])
-		print(self.my_ranks)
+		#print(self.my_ranks['Player'][0])
+		#print(self.my_ranks)
 		position = self.my_ranks.loc[self.my_ranks['Player'] == player, 'Position'].iloc[0]
 		self.my_team.append(player)
 
 		if position == 'wr':
 			self.my_wrs.append(player)
+			if len(self.my_wrs) <= 3: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'qb':
 			self.my_qbs.append(player)
+			if len(self.my_qbs) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'rb':
 			self.my_rbs.append(player)
+			if len(self.my_rbs) <= 2: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'te':
 			self.my_tes.append(player)
+			if len(self.my_tes) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'k':
 			self.my_ks.append(player)
+			if len(self.my_ks) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'd':
 			self.my_ds.append(player)
+			if len(self.my_ds) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		else:
 			print('Position Error')
 		final_ranks = final_ranks[final_ranks.Player != player]
-		#self.update_ranks() #build this class to update according to positions on roster
 		final_ranks = final_ranks.reset_index(drop = True)
-		if player in avg_ranks['Player']:
+		if player in avg_ranks['Player'].values:
 			avg_ranks = avg_ranks[avg_ranks.Player != player]
 			avg_ranks = avg_ranks.reset_index(drop = True)
 		pass
-		#enter player and that deletes row from final ranks and avg ranks
-		#adds player to list of players
+
 	def print_team(self):
 
 		print('WRs:', self.my_wrs)
@@ -78,23 +91,18 @@ class Draft():
 		print('RBs:', self.my_rbs)
 		pass
 
-	#TODO: ADD KICKERS AND DEFENSE AND OTHER POSITIONS
 	def update_ranks(self):
 
 		#Update WR ranks
 		if(len(self.my_wrs) == 3):
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 1.2
 		if(len(self.my_wrs) == 4):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 1.6
 		if(len(self.my_wrs) == 5):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 1.8
 		if(len(self.my_wrs) == 6):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 2
 		if(len(self.my_wrs) > 6):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 2.2
 
 		#update RB ranks
@@ -154,7 +162,7 @@ class Draft():
 
 		self.my_ranks = self.my_ranks.sort_values(by =['Rank'])
 		self.my_ranks = self.my_ranks.reset_index(drop = True)
-		print('updating ranks...')
+		#print('updating ranks...')
 		pass
 
 class AutoDraft():
@@ -163,6 +171,8 @@ class AutoDraft():
 	def __init__(self):
 		self.my_ranks = avg_ranks.copy()
 		self.my_team = []
+		self.my_starters = []
+		self.my_backups = []
 		self.round = 0
 		self.my_wrs = []
 		self.my_rbs = []
@@ -177,35 +187,42 @@ class AutoDraft():
 		self.update_ranks()
 		player = self.my_ranks['Player'][0]
 		print('team selects...', player)
-		print(self.my_ranks['Player'][0])
-		print('next', self.my_ranks['Player'][1])
-		print(self.my_ranks)
+		#print(self.my_ranks['Player'][0])
+		#print(self.my_ranks)
 		position = avg_ranks.loc[avg_ranks['Player'] == player, 'Position'].iloc[0]
 		self.my_team.append(player)
 		if position == 'wr':
 			self.my_wrs.append(player)
+			if len(self.my_wrs) <= 3: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'qb':
 			self.my_qbs.append(player)
+			if len(self.my_qbs) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'rb':
 			self.my_rbs.append(player)
+			if len(self.my_rbs) <= 2: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'te':
 			self.my_tes.append(player)
+			if len(self.my_tes) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'k':
 			self.my_ks.append(player)
+			if len(self.my_ks) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		elif position == 'd':
 			self.my_ds.append(player)
+			if len(self.my_ds) <= 1: self.my_starters.append(player)
+			else: self.my_backups.append(player)
 		else:
 			print('Position Error')
-		if player in final_ranks['Player']:
+		if player in final_ranks['Player'].values:
 			final_ranks = final_ranks[final_ranks.Player != player]
-		#self.update_ranks() #build this class to update according to positions on roster
 			final_ranks = final_ranks.reset_index(drop = True)
 		avg_ranks = avg_ranks[avg_ranks.Player != player]
-		#self.update_ranks()
 		avg_ranks = avg_ranks.reset_index(drop = True)
 		pass
-		#enter player and that deletes row from final ranks and avg ranks
-		#adds player to list of players
 	def print_team(self):
 
 		print('WRs:', self.my_wrs)
@@ -216,23 +233,18 @@ class AutoDraft():
 		print('RBs:', self.my_rbs)
 		pass
 
-	#TODO: ADD KICKERS AND DEFENSE AND OTHER POSITIONS
 	def update_ranks(self):
 		global final_ranks
 		#Update WR ranks
 		if(len(self.my_wrs) == 3):
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 1.2
 		if(len(self.my_wrs) == 4):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 1.6
 		if(len(self.my_wrs) == 5):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 1.8
 		if(len(self.my_wrs) == 6):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 2
 		if(len(self.my_wrs) > 6):
-			print(self.my_wrs)
 			self.my_ranks.loc[self.my_ranks.Position == 'wr', 'Rank'] *= 2.2
 
 		#update RB ranks
@@ -292,16 +304,15 @@ class AutoDraft():
 
 		self.my_ranks = self.my_ranks.sort_values(by =['Rank'])
 		self.my_ranks = self.my_ranks.reset_index(drop = True)
-		print('updating ranks...')
+		#print('updating ranks...')
 		pass
 
 
 def main():
 	print('Fantasy Mock Draft 2017')
-	#print(joined_data)
 	print('RANKS', final_ranks)
 	print('AVG', avg_ranks)
-	#print('sqlranks', ranks)
+
 	player1 = Draft()
 	player2 = AutoDraft()
 	player3 = AutoDraft()
@@ -314,7 +325,6 @@ def main():
 	for i in range(16):
 		print('Round', i+1)
 
-		#player1.pick_player(input('Your Pick:'))
 		print('player 1 picking...')
 		player1.pick_player()
 		print('player 2 picking...')
@@ -366,25 +376,55 @@ def main():
 		player8.print_team()
 		print()
 		
-	print('FINAL', final_ranks)
-	print('AVG', avg_ranks)
+		# print('FINAL', final_ranks)
+		# print('AVG', avg_ranks)
 
-	# cur.execute('DROP TABLE IF EXISTS Teams')
-	# cur.execute('CREATE TABLE Teams (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
-	# i = 0
-	# while(i < 16):
-	# 	tup = player1.my_team[i], player2.my_team[i], player3.my_team[i], player4.my_team[i], player5.my_team[i], player6.my_team[i], player7.my_team[i], player8.my_team[i]
-	# 	cur.execute('INSERT INTO Teams VALUES (?, ?, ?, ?, ?, ?, ?, ?)', tup)
-	# 	conn.commit()
-	# 	i += 1
-	#for player in player1.my_team:
-	# print(projections_df['Player'].values)
-	# print(projections_df.loc[projections_df['Player'] == 'David Johnson', 'Score'].iloc[0])
-	def find_score(team):
+	cur.execute('DROP TABLE IF EXISTS Teams')
+	cur.execute('CREATE TABLE Teams (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
+	i = 0
+	while(i < 16):
+		team_tup = player1.my_team[i], player2.my_team[i], player3.my_team[i], player4.my_team[i], player5.my_team[i], player6.my_team[i], player7.my_team[i], player8.my_team[i]
+		cur.execute('INSERT INTO Teams VALUES (?, ?, ?, ?, ?, ?, ?, ?)', team_tup)
+		conn.commit()
+		i += 1
+	cur.execute('DROP TABLE IF EXISTS Starters')
+	cur.execute('CREATE TABLE Starters (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
+	i = 0
+	while(i < 9):
+		start_tup = player1.my_starters[i], player2.my_starters[i], player3.my_starters[i], player4.my_starters[i], player5.my_starters[i], player6.my_starters[i], player7.my_starters[i], player8.my_starters[i]
+		cur.execute('INSERT INTO Starters VALUES (?, ?, ?, ?, ?, ?, ?, ?)', start_tup)
+		conn.commit()
+		i += 1
+	#print(player1.my_ranks['Player'].values)
+	def find_score(team, backups, my_ranks):
 		team_score = 0
 		for player in team:
 			if player in projections_df['Player'].values:
 				score = projections_df.loc[projections_df['Player'] == player, 'Score'].iloc[0]
+				#Accounts for injuries (substitutes highest performing backup)
+				if score < 30:
+					for backup in backups:
+						if backup in projections_df['Player'].values:
+							position = projections_df.loc[projections_df['Player'] == player, 'Position'].iloc[0]
+							backup_pos = projections_df.loc[projections_df['Player'] == backup, 'Position'].iloc[0]
+							if position == backup_pos:
+								new_score = projections_df.loc[projections_df['Player'] == backup, 'Score'].iloc[0]
+								if new_score > score:
+									player = backup
+									score = new_score
+				#Accounts for lack up backup(Waiver Wire). Assumes first pick on waiver wire
+				if score < 30:
+					for rank in my_ranks:
+						if rank in projections_df['Player'].values:
+							position = projections_df.loc[projections_df['Player'] == player, 'Position'].iloc[0]
+							waiver_pos = projections_df.loc[projections_df['Player'] == rank, 'Position'].iloc[0]
+							if position == waiver_pos:
+								waiver_score = projections_df.loc[projections_df['Player'] == rank, 'Score'].iloc[0]
+								if waiver_score > score:
+									player = rank
+									score = waiver_score
+
+				#print(player, score)
 			else:
 				score = 0
 			team_score += score
@@ -392,16 +432,27 @@ def main():
 
 	cur.execute('DROP TABLE IF EXISTS Team_Score')
 	cur.execute('CREATE TABLE Team_Score (Team TEXT, Score NUMBER)')
-	score_1 = find_score(player1.my_team)
-	score_2 = find_score(player2.my_team)
-	score_3 = find_score(player3.my_team)
-	score_4 = find_score(player4.my_team)
-	score_5 = find_score(player5.my_team)
-	score_6 = find_score(player6.my_team)
-	score_7 = find_score(player7.my_team)
-	score_8 = find_score(player8.my_team)
 
-	#tup = score_1, score_2, score_3, score_4, score_5, score_6, score_7, score_8
+	#print('Team Results')
+
+	#print('1')
+	score_1 = find_score(player1.my_starters, player1.my_backups, player1.my_ranks['Player'].values)
+	#print('2')
+	score_2 = find_score(player2.my_starters, player2.my_backups, player2.my_ranks['Player'].values)
+	#print('3')
+	score_3 = find_score(player3.my_starters, player3.my_backups, player3.my_ranks['Player'].values)
+	#print('4')
+	score_4 = find_score(player4.my_starters, player4.my_backups, player4.my_ranks['Player'].values)
+	#print('5')
+	score_5 = find_score(player5.my_starters, player5.my_backups, player5.my_ranks['Player'].values)
+	#print('6')
+	score_6 = find_score(player6.my_starters, player6.my_backups, player6.my_ranks['Player'].values)
+	#print('7')
+	score_7 = find_score(player7.my_starters, player7.my_backups, player7.my_ranks['Player'].values)
+	#print('8')
+	score_8 = find_score(player8.my_starters, player8.my_backups, player8.my_ranks['Player'].values)
+	#print(player1.my_backups)
+
 	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('1', score_1))
 	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('2', score_2))
 	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('3', score_3))

@@ -38,8 +38,7 @@ def get_rankings(api):
 				baseurl = 'http://api.fantasy.nfl.com/v1/players/editordraftranks'
 				req = requests.get(baseurl, params = url_params)
 				clean_data = json.loads(req.text)
-				#pprint(clean_data)
-				CACHE_DICTION[api].append(clean_data['players'])#[str(offset)+'-'+str(count)] = clean_data['players']
+				CACHE_DICTION[api].append(clean_data['players'])
 				dumped_json_cache = json.dumps(CACHE_DICTION, indent = 4)
 				fw = open(CACHE_FNAME,"w")
 				fw.write(dumped_json_cache)
@@ -83,24 +82,21 @@ def get_pts(api):
 		fw.close()
 	return CACHE_DICTION_2[api]['szn_pts']
 
-#get_pts('NFL')
+get_pts('NFL')
 
 conn = sqlite3.connect('FinalDB.sqlite')
 cur = conn.cursor()
 
 cur.execute('DROP TABLE IF EXISTS Scores_VS_Projections')
-cur.execute('CREATE TABLE Scores_VS_Projections (Player TEXT, Projected NUMBER, Score NUMBER)')
+cur.execute('CREATE TABLE Scores_VS_Projections (Player TEXT, Position TEXT, Projected NUMBER, Score NUMBER)')
 def projected_to_actual():
 	player = []
 	projected = []
 	actual = []
 	szn_stats = get_pts('NFL')
 	for stat in szn_stats:
-		player.append(stat['name'])
-		projected.append(stat['seasonProjectedPts'])
-		actual.append(stat['seasonPts'])
-		tup = stat['name'], stat['seasonProjectedPts'], stat['seasonPts']
-		cur.execute('INSERT INTO Scores_VS_Projections VALUES (?, ?, ?)', tup)
+		tup = stat['name'], stat['position'], stat['seasonProjectedPts'], stat['seasonPts']
+		cur.execute('INSERT INTO Scores_VS_Projections VALUES (?, ?, ?, ?)', tup)
 		conn.commit()
 
 projected_to_actual()

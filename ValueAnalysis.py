@@ -7,6 +7,7 @@ import sqlite3
 # K_df = pd.read_csv('K.csv')
 # WR_df = pd.read_csv('wr.csv')
 # avg_draft = pd.read_csv('avg_draft.csv')
+
 conn = sqlite3.connect('FinalDB.sqlite')
 
 QB_df = pd.read_sql_query('SELECT * FROM QB;', conn)
@@ -28,11 +29,6 @@ if 'Position' not in D_df: D_df.insert(2, 'Position', ['d']*len(D_df['Player']))
 if 'Position' not in K_df: K_df.insert(2, 'Position', ['k']*len(K_df['Player']))
 if 'Position' not in WR_df: WR_df.insert(2, 'Position', ['wr']*len(WR_df['Player']))
 
-# def cache_csv(file_name):
-# 	try:
-# 		pd.read_csv(file_name+'.csv')
-# 		print('reading from cache')
-# 	except:
 		
 def value_score(my_file):
 	#Average number of players drafted per position for the first 100 picks
@@ -45,6 +41,7 @@ def value_score(my_file):
 		elif my_file['Player'][0] == K_df['Player'][0]: num_players = 1
 	else: print('unknown file name')
 
+	#Compares projected point differential based on the lowest score per position (per 100 players)
 	baseline_score = my_file['PTS'][:num_players].min()
 	my_file['Score'] = my_file['PTS'] - baseline_score
 
@@ -58,7 +55,7 @@ def get_rankings():
 	df = df.reset_index(drop = True)
 	df = df[['Player','Position','Score']]
 	ind = list(df.index.values)
-	#print(ind)
+
 	if 'Rank' not in df: df.insert(0, 'Rank', ind)
 	try:
 		print('reading from cache')
