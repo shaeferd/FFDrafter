@@ -1,4 +1,4 @@
-Fantasy Football AutoDrafter
+# Fantasy Football AutoDrafter
 
 ## REQUIREMENTS
 - Python3
