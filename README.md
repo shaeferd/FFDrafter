@@ -20,7 +20,7 @@ Explanation: I added the cumulative fantasy points of each team’s starters (an
 
 Result:
 
-![](https://github.com/shaeferd/FFDrafter/tree/master/Visualization/Team_Results.png)
+![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Scores_V_Projections.png?raw=true)
 
 Player 1, using “Value Based Drafting”, had the 3rd highest score. Results are inconclusive given random error (injuries) and minimal trial numbers (only 1 season tested).
 
