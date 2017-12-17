@@ -1,4 +1,4 @@
-#ReadMe
+Fantasy Football AutoDrafter
 
 Requirements: Python3, sqlite browser
 
