@@ -20,13 +20,13 @@ Explanation: I added the cumulative fantasy points of each team’s starters (an
 
 Result:
 
-![Team Scores](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Team_Resaults.png?raw=true)
+![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Team_Resaults.png?raw=true)
 
 Player 1, using “Value Based Drafting”, had the 3rd highest score. Results are inconclusive given random error (injuries) and minimal trial numbers (only 1 season tested).
 
 Extra:
 
-![Projected Scores](https://github.com/shaeferd/FFDrafter/tree/master/Visualization/Scores_V_Projections.png?raw=true)
+![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Scores_V_Projections.png?raw=true)
 
 To create a scatterplot of NFL Fantasy Football’s projected scores vs actual scores, run “python3 projections.py”. The projected scores seemed to be a pretty close match aside from outliers (mostly injured players)
 
