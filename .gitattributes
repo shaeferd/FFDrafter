@@ -1,1 +1,2 @@
-
+$ cat .gitattributes
+scraper.py linguist-language=SQL
