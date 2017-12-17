@@ -31,12 +31,3 @@ Extra:
 To create a scatterplot of NFL Fantasy Football’s projected scores vs actual scores, run “python3 projections.py”. The projected scores seemed to be a pretty close match aside from outliers (mostly injured players)
 
 
-TODO:
-
-Make draft class in drafter 1 class
-
-comment everything out
-
-shorten stuff/make more efficient
-
-fewer files
