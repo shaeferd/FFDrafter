@@ -31,6 +31,6 @@ Player 1, using “Value Based Drafting”, had the 3rd highest score. Results a
 ## Extra
 ![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Scores_V_Projections.png?raw=true)
 
-The projected scores seemed to be a pretty close match to actual scores aside from outliers (mostly inactive players)
+The projected scores seemed to be a pretty close match to actual scores aside from outliers
 
 
