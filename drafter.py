@@ -2,7 +2,6 @@
 import pandas as pd
 import sqlite3
 import json
-import draft_class
 
 #Converts sqlite database to dataframe
 
