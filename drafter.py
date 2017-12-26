@@ -34,7 +34,6 @@ class AutoDraft():
 		self.my_ds = []
 
 	def pick_player(self, ranks, player = ''):
-		#check if there is no value for player, set default to my_ranks
 		global final_ranks
 		global avg_ranks
 		self.my_ranks = ranks.copy()
@@ -175,7 +174,7 @@ def main():
 	print('AVG', avg_ranks)
 
 	player1 = AutoDraft(final_ranks.copy())
-	player2 = AutoDraft(avg_ranks.copy())
+	player2 = AutoDraft(final_ranks.copy())
 	player3 = AutoDraft(avg_ranks.copy())
 	player4 = AutoDraft(avg_ranks.copy())
 	player5 = AutoDraft(avg_ranks.copy())
@@ -188,7 +187,11 @@ def main():
 		print()
 		print('player 1 picking...')
 
-# figure out how to give unlimited guesses
+		#Uncomment to manually pick players
+		'''
+		# User Pick
+		# one more chance if you get player's name wrong
+		# Press Enter to auto-pick
 		try:
 			my_player = input('Select a Player: ')
 			player1.pick_player(final_ranks.copy(), my_player)
@@ -198,9 +201,13 @@ def main():
 			my_player = input('Select a Player: ')
 			player1.pick_player(final_ranks.copy(), my_player)
 			valid_player = True
+		'''
+
+		#Comment out line below to manually pick players
+		player1.pick_player(final_ranks.copy())
 
 		print('player 2 picking...')
-		player2.pick_player(avg_ranks.copy())
+		player2.pick_player(final_ranks.copy())
 		print('player 3 picking...')
 		player3.pick_player(avg_ranks.copy())
 		print('player 4 picking...')
@@ -251,90 +258,92 @@ def main():
 		print('FINAL', final_ranks)
 		# print('AVG', avg_ranks)
 
-	# cur.execute('DROP TABLE IF EXISTS Teams')
-	# cur.execute('CREATE TABLE Teams (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
-	# i = 0
-	# while(i < 16):
-	# 	team_tup = player1.my_team[i], player2.my_team[i], player3.my_team[i], player4.my_team[i], player5.my_team[i], player6.my_team[i], player7.my_team[i], player8.my_team[i]
-	# 	cur.execute('INSERT INTO Teams VALUES (?, ?, ?, ?, ?, ?, ?, ?)', team_tup)
-	# 	conn.commit()
-	# 	i += 1
-	# cur.execute('DROP TABLE IF EXISTS Starters')
-	# cur.execute('CREATE TABLE Starters (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
-	# i = 0
-	# while(i < 9):
-	# 	start_tup = player1.my_starters[i], player2.my_starters[i], player3.my_starters[i], player4.my_starters[i], player5.my_starters[i], player6.my_starters[i], player7.my_starters[i], player8.my_starters[i]
-	# 	cur.execute('INSERT INTO Starters VALUES (?, ?, ?, ?, ?, ?, ?, ?)', start_tup)
-	# 	conn.commit()
-	# 	i += 1
-	# #print(player1.my_ranks['Player'].values)
-	# def find_score(team, backups, my_ranks):
-	# 	team_score = 0
-	# 	for player in team:
-	# 		if player in projections_df['Player'].values:
-	# 			score = projections_df.loc[projections_df['Player'] == player, 'Score'].iloc[0]
-	# 			#Accounts for injuries (substitutes highest performing backup)
-	# 			if score < 30:
-	# 				for backup in backups:
-	# 					if backup in projections_df['Player'].values:
-	# 						position = projections_df.loc[projections_df['Player'] == player, 'Position'].iloc[0]
-	# 						backup_pos = projections_df.loc[projections_df['Player'] == backup, 'Position'].iloc[0]
-	# 						if position == backup_pos:
-	# 							new_score = projections_df.loc[projections_df['Player'] == backup, 'Score'].iloc[0]
-	# 							if new_score > score:
-	# 								player = backup
-	# 								score = new_score
-	# 			#Accounts for lack up backup(Waiver Wire). Assumes first pick on waiver wire
-	# 			if score < 30:
-	# 				for rank in my_ranks:
-	# 					if rank in projections_df['Player'].values:
-	# 						position = projections_df.loc[projections_df['Player'] == player, 'Position'].iloc[0]
-	# 						waiver_pos = projections_df.loc[projections_df['Player'] == rank, 'Position'].iloc[0]
-	# 						if position == waiver_pos:
-	# 							waiver_score = projections_df.loc[projections_df['Player'] == rank, 'Score'].iloc[0]
-	# 							if waiver_score > score:
-	# 								player = rank
-	# 								score = waiver_score
 
-	# 			#print(player, score)
-	# 		else:
-	# 			score = 0
-	# 		team_score += score
-	# 	return team_score
+	#Team Statistics
+	cur.execute('DROP TABLE IF EXISTS Teams')
+	cur.execute('CREATE TABLE Teams (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
+	i = 0
+	while(i < 16):
+		team_tup = player1.my_team[i], player2.my_team[i], player3.my_team[i], player4.my_team[i], player5.my_team[i], player6.my_team[i], player7.my_team[i], player8.my_team[i]
+		cur.execute('INSERT INTO Teams VALUES (?, ?, ?, ?, ?, ?, ?, ?)', team_tup)
+		conn.commit()
+		i += 1
+	cur.execute('DROP TABLE IF EXISTS Starters')
+	cur.execute('CREATE TABLE Starters (Player1 TEXT, Player2 TEXT, Player3 TEXT, Player4 TEXT, Player5 TEXT, Player6 TEXT, Player7 TEXT, Player8 TEXT)')
+	i = 0
+	while(i < 9):
+		start_tup = player1.my_starters[i], player2.my_starters[i], player3.my_starters[i], player4.my_starters[i], player5.my_starters[i], player6.my_starters[i], player7.my_starters[i], player8.my_starters[i]
+		cur.execute('INSERT INTO Starters VALUES (?, ?, ?, ?, ?, ?, ?, ?)', start_tup)
+		conn.commit()
+		i += 1
+	#print(player1.my_ranks['Player'].values)
+	def find_score(team, backups, my_ranks):
+		team_score = 0
+		for player in team:
+			if player in projections_df['Player'].values:
+				score = projections_df.loc[projections_df['Player'] == player, 'Score'].iloc[0]
+				#Accounts for injuries (substitutes highest performing backup)
+				if score < 30:
+					for backup in backups:
+						if backup in projections_df['Player'].values:
+							position = projections_df.loc[projections_df['Player'] == player, 'Position'].iloc[0]
+							backup_pos = projections_df.loc[projections_df['Player'] == backup, 'Position'].iloc[0]
+							if position == backup_pos:
+								new_score = projections_df.loc[projections_df['Player'] == backup, 'Score'].iloc[0]
+								if new_score > score:
+									player = backup
+									score = new_score
+				#Accounts for lack up backup(Waiver Wire). Assumes first pick on waiver wire
+				if score < 30:
+					for rank in my_ranks:
+						if rank in projections_df['Player'].values:
+							position = projections_df.loc[projections_df['Player'] == player, 'Position'].iloc[0]
+							waiver_pos = projections_df.loc[projections_df['Player'] == rank, 'Position'].iloc[0]
+							if position == waiver_pos:
+								waiver_score = projections_df.loc[projections_df['Player'] == rank, 'Score'].iloc[0]
+								if waiver_score > score:
+									player = rank
+									score = waiver_score
 
-	# cur.execute('DROP TABLE IF EXISTS Team_Score')
-	# cur.execute('CREATE TABLE Team_Score (Team TEXT, Score NUMBER)')
+				#print(player, score)
+			else:
+				score = 0
+			team_score += score
+		return team_score
 
-	# #print('Team Results')
+	cur.execute('DROP TABLE IF EXISTS Team_Score')
+	cur.execute('CREATE TABLE Team_Score (Team TEXT, Score NUMBER)')
 
-	# #print('1')
-	# score_1 = find_score(player1.my_starters, player1.my_backups, player1.my_ranks['Player'].values)
-	# #print('2')
-	# score_2 = find_score(player2.my_starters, player2.my_backups, player2.my_ranks['Player'].values)
-	# #print('3')
-	# score_3 = find_score(player3.my_starters, player3.my_backups, player3.my_ranks['Player'].values)
-	# #print('4')
-	# score_4 = find_score(player4.my_starters, player4.my_backups, player4.my_ranks['Player'].values)
-	# #print('5')
-	# score_5 = find_score(player5.my_starters, player5.my_backups, player5.my_ranks['Player'].values)
-	# #print('6')
-	# score_6 = find_score(player6.my_starters, player6.my_backups, player6.my_ranks['Player'].values)
-	# #print('7')
-	# score_7 = find_score(player7.my_starters, player7.my_backups, player7.my_ranks['Player'].values)
-	# #print('8')
-	# score_8 = find_score(player8.my_starters, player8.my_backups, player8.my_ranks['Player'].values)
-	# #print(player1.my_backups)
+	#print('Team Results')
 
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('1', score_1))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('2', score_2))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('3', score_3))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('4', score_4))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('5', score_5))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('6', score_6))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('7', score_7))
-	# cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('8', score_8))
+	#print('1')
+	score_1 = find_score(player1.my_starters, player1.my_backups, player1.my_ranks['Player'].values)
+	#print('2')
+	score_2 = find_score(player2.my_starters, player2.my_backups, player2.my_ranks['Player'].values)
+	#print('3')
+	score_3 = find_score(player3.my_starters, player3.my_backups, player3.my_ranks['Player'].values)
+	#print('4')
+	score_4 = find_score(player4.my_starters, player4.my_backups, player4.my_ranks['Player'].values)
+	#print('5')
+	score_5 = find_score(player5.my_starters, player5.my_backups, player5.my_ranks['Player'].values)
+	#print('6')
+	score_6 = find_score(player6.my_starters, player6.my_backups, player6.my_ranks['Player'].values)
+	#print('7')
+	score_7 = find_score(player7.my_starters, player7.my_backups, player7.my_ranks['Player'].values)
+	#print('8')
+	score_8 = find_score(player8.my_starters, player8.my_backups, player8.my_ranks['Player'].values)
+	#print(player1.my_backups)
 
-	# conn.commit()
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('1', score_1))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('2', score_2))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('3', score_3))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('4', score_4))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('5', score_5))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('6', score_6))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('7', score_7))
+	cur.execute('INSERT INTO Team_Score VALUES (?, ?)', ('8', score_8))
+
+	conn.commit()
 
 
 
