@@ -14,9 +14,11 @@
 ## Auto-Drafting Strategy
 - This program has 2 separate AI:
 
-	1. Player 1 (Draft Class): Drafts based on “Value Based Drafting”, a statistical methodology of ranking players based on their projected points compared to other players in their position.
+	1. Player 1: Drafts based on “Value Based Drafting”, a statistical methodology of ranking players based on their projected points compared to other players in their position.
 	
-	2. Players 2-8 (AutoDraft Class): Drafts based on the “Average Draft Position” of all players according to data from mock drafts and live drafts.
+	2. Players 2-8: Drafts based on the “Average Draft Position” of all players according to data from mock drafts and live drafts.
+	
+	- Manipulate code to manually draft your own team by commenting and removing comments around labeled class instances 
 
 
 ## Results
