@@ -11,6 +11,9 @@
 
 3.  Run the program: `python3 drafter.py`
 
+![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Screen%20Shot%202018-09-10%20at%209.57.23%20AM.png?raw=true)
+![](https://github.com/shaeferd/FFDrafter/blob/master/Visualization/Screen%20Shot%202018-09-10%20at%209.49.13%20AM.png?raw=true)
+
 ## Auto-Drafting Strategy
 - This program has 2 separate AI:
 
