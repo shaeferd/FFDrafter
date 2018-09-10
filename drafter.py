@@ -187,7 +187,7 @@ def main():
 		print()
 		print('player 1 picking...')
 
-		#Uncomment to manually pick players
+		#UNCOMMENT CHUNK TO MANUALLY PICK PLAYERS
 		'''
 		# User Pick
 		# one more chance if you get player's name wrong
@@ -203,7 +203,7 @@ def main():
 			valid_player = True
 		'''
 
-		#Comment out line below to manually pick players
+		#COMMENT OUT LINE BELOW TO MANUALLY PICK PLAYERS
 		player1.pick_player(final_ranks.copy())
 
 		print('player 2 picking...')
